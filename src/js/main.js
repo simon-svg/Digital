@@ -63,60 +63,82 @@ detailsItems[0].addEventListener("click", () => {
     if (yellowBool) {
         detailsItems[0].style.transform = "translateX(0)";
     }
-    else{
+    else {
         detailsItems[0].style.transform = "translateX(calc(100% - 300px))";
     }
     yellowBool = !yellowBool;
 })
 detailsItems[0].addEventListener("mouseenter", () => {
-    if(yellowBool){
+    if (yellowBool) {
         detailsItems[0].style.transform = "translateX(calc(100% - 330px))";
     }
 })
 detailsItems[0].addEventListener("mouseleave", () => {
-    if(yellowBool){
+    if (yellowBool) {
         detailsItems[0].style.transform = "translateX(calc(100% - 300px))";
     }
 })
 
 
 detailsItems[1].addEventListener("click", () => {
-    if (blueBool) {        
+    if (blueBool) {
         detailsItems[1].style.transform = "translateX(100px)";
     }
-    else{        
-        detailsItems[1].style.transform = "translateX(calc(100% - 200px))";    
+    else {
+        detailsItems[1].style.transform = "translateX(calc(100% - 200px))";
     }
     blueBool = !blueBool;
 })
 detailsItems[1].addEventListener("mouseenter", () => {
-    if(blueBool){
+    if (blueBool) {
         detailsItems[1].style.transform = "translateX(calc(100% - 230px))";
     }
 })
 detailsItems[1].addEventListener("mouseleave", () => {
-    if(blueBool){
+    if (blueBool) {
         detailsItems[1].style.transform = "translateX(calc(100% - 200px))";
     }
 })
 
 
 detailsItems[2].addEventListener("click", () => {
-    if (greenBool) {        
+    if (greenBool) {
         detailsItems[2].style.transform = "translateX(200px)";
     }
-    else{        
+    else {
         detailsItems[2].style.transform = "translateX(calc(100% - 100px))";
     }
     greenBool = !greenBool;
 })
 detailsItems[2].addEventListener("mouseenter", () => {
-    if(greenBool){
+    if (greenBool) {
         detailsItems[2].style.transform = "translateX(calc(100% - 130px))";
     }
 })
 detailsItems[2].addEventListener("mouseleave", () => {
-    if(greenBool){
+    if (greenBool) {
         detailsItems[2].style.transform = "translateX(calc(100% - 100px))";
     }
 })
+
+
+
+
+
+
+
+
+const appTransform = document.querySelector(".app__transform");
+let translateZ = 0;
+
+appTransform.onwheel = (e) => {
+    translateZ -= event.deltaY * 0.025;
+
+    if(translateZ < -40){
+        translateZ = -40;
+    }
+    else if(translateZ > 0){
+        translateZ = 0;
+    }
+    appTransform.style.transform = `perspective(400px) translateZ(${translateZ}px)`
+}
