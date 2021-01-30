@@ -127,12 +127,16 @@ detailsItems[2].addEventListener("mouseleave", () => {
 
 
 
-
+const app = document.querySelector(".app");
 const appTransform = document.querySelector(".app__transform");
+const footer = document.querySelector(".footer");
 let translateZ = 0;
+let footerTransform = 0;// 590
 
-appTransform.onwheel = (e) => {
+app.onwheel = (e) => {
     translateZ -= event.deltaY * 0.025;
+    footerTransform -= event.deltaY * 0.3655;
+    console.log(footerTransform)
 
     if(translateZ < -40){
         translateZ = -40;
@@ -140,5 +144,12 @@ appTransform.onwheel = (e) => {
     else if(translateZ > 0){
         translateZ = 0;
     }
-    appTransform.style.transform = `perspective(400px) translateZ(${translateZ}px)`
+    if(footerTransform < -590){
+        footerTransform = -590;
+    }
+    else if(footerTransform > 0){
+        footerTransform = 0;
+    }
+    appTransform.style.transform = `perspective(400px) translateZ(${translateZ}px)`;
+    footer.style.transform = `translateY(${footerTransform}px)`;
 }
