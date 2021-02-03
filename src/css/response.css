@@ -54,6 +54,29 @@
         padding: 0 50px;
     }
 }
+@media screen and (max-width: 1025px){
+    .details__item{
+        display: none;
+    }
+    .home,
+    .header{
+        width: 100%;
+    }
+    .home__img_cont{
+        width: 60%;
+    }
+    .home{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .home__inside{
+        align-items: center;
+    }
+    .home__inside_heading{
+        text-align: center;
+    }
+}
 @media screen and (max-width: 950px){
     .home__inside_heading{
         font-size: 19px;
@@ -66,39 +89,11 @@
     .home__inside_cont{
         margin-right: 15px;
     }
-    .home{
-        width: calc(100% - 150px);
-    }
     .burger-menu {
         width: 28px;
         height: 34px;
     }
-    .videos__icon{
-        width: 15px;
-        top: 25px;
-        left: 25px;
-    }
-    .details__item-circle{
-        transform: translateX(calc(100% - 150px));
-        -webkit-transform: translateX(calc(100% - 150px));
-        -moz-transform: translateX(calc(100% - 150px));
-        -ms-transform: translateX(calc(100% - 150px));
-        -o-transform: translateX(calc(100% - 150px));
-    }
-    .details__item-rect{
-        transform: translateX(calc(100% - 100px));
-        -webkit-transform: translateX(calc(100% - 100px));
-        -moz-transform: translateX(calc(100% - 100px));
-        -ms-transform: translateX(calc(100% - 100px));
-        -o-transform: translateX(calc(100% - 100px));
-    }
-    .details__item-triangle{
-        transform: translateX(calc(100% - 50px));
-        -webkit-transform: translateX(calc(100% - 50px));
-        -moz-transform: translateX(calc(100% - 50px));
-        -ms-transform: translateX(calc(100% - 50px));
-        -o-transform: translateX(calc(100% - 50px));
-    }
+
 
     .footer__top_title,
     .footer__btn_info,
@@ -155,9 +150,26 @@
     .footer__mid_list{
         margin: 10px 0 0 0;
     }
+    .header__cont{
+        padding: 0 0 0 20px;
+    }
 }
 @media screen and (max-width: 400px){
-    .footer__top_title, .footer__btn_info, .footer__bot_link {
+    .home__title_gray{
+        font-size: 20px;
+    }
+    .home__title_icon{
+        width: 20px;
+    }
+    .header__item:last-child{
+        margin-left: 20px;
+    }
+    .footer__top_title,
+    .footer__btn_info,
+    .footer__bot_link,
+    .home__inside_heading,
+    .header__item_link,
+    .header__link {
         font-size: 15px;
     }
     .footer__mid_item-title, .footer__mid_item {

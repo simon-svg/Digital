@@ -59,70 +59,70 @@ let yellowBool = true;
 let blueBool = true;
 let greenBool = true;
 
-function VideoEvent(vid1, vid1hov, vid2, vid2hov, vid3, vid3hov) {
+function VideoEvent(vid1, vid1Ent, vid2, vid2Ent, vid3, vid3Ent) {
     detailsItems[0].addEventListener("click", () => {
         if (yellowBool) {
             detailsItems[0].style.transform = "translateX(0)";
         }
         else {
-            detailsItems[0].style.transform = "translateX(calc(100% - 300px))";
+            detailsItems[0].style.transform = `translateX(calc(100% - ${vid1}px))`;
         }
         yellowBool = !yellowBool;
     })
     detailsItems[0].addEventListener("mouseenter", () => {
         if (yellowBool) {
-            detailsItems[0].style.transform = "translateX(calc(100% - 330px))";
+            detailsItems[0].style.transform = `translateX(calc(100% - ${vid1Ent}px))`;
         }
     })
     detailsItems[0].addEventListener("mouseleave", () => {
         if (yellowBool) {
-            detailsItems[0].style.transform = "translateX(calc(100% - 300px))";
+            detailsItems[0].style.transform = `translateX(calc(100% - ${vid1}px))`;
         }
     })
 
 
     detailsItems[1].addEventListener("click", () => {
         if (blueBool) {
-            detailsItems[1].style.transform = "translateX(100px)";
+            detailsItems[1].style.transform = `translateX(${vid3}px)`;
         }
         else {
-            detailsItems[1].style.transform = "translateX(calc(100% - 200px))";
+            detailsItems[1].style.transform = `translateX(calc(100% - ${vid2}px))`;
         }
         blueBool = !blueBool;
     })
     detailsItems[1].addEventListener("mouseenter", () => {
         if (blueBool) {
-            detailsItems[1].style.transform = "translateX(calc(100% - 230px))";
+            detailsItems[1].style.transform = `translateX(calc(100% - ${vid2Ent}px))`;
         }
     })
     detailsItems[1].addEventListener("mouseleave", () => {
         if (blueBool) {
-            detailsItems[1].style.transform = "translateX(calc(100% - 200px))";
+            detailsItems[1].style.transform = `translateX(calc(100% - ${vid2}px))`;
         }
     })
 
 
     detailsItems[2].addEventListener("click", () => {
         if (greenBool) {
-            detailsItems[2].style.transform = "translateX(200px)";
+            detailsItems[2].style.transform = `translateX(${vid2}px)`;
         }
         else {
-            detailsItems[2].style.transform = "translateX(calc(100% - 100px))";
+            detailsItems[2].style.transform = `translateX(calc(100% - ${vid3}px))`;
         }
         greenBool = !greenBool;
     })
     detailsItems[2].addEventListener("mouseenter", () => {
         if (greenBool) {
-            detailsItems[2].style.transform = "translateX(calc(100% - 130px))";
+            detailsItems[2].style.transform = `translateX(calc(100% - ${vid3Ent}px))`;
         }
     })
     detailsItems[2].addEventListener("mouseleave", () => {
         if (greenBool) {
-            detailsItems[2].style.transform = "translateX(calc(100% - 100px))";
+            detailsItems[2].style.transform = `translateX(calc(100% - ${vid3}px))`;
         }
     })
 }
-
+VideoEvent(300, 330, 200, 230, 100, 130);
 
 
 
@@ -154,15 +154,3 @@ app.onwheel = (e) => {
     appTransform.style.transform = `perspective(400px) translateZ(${translateZ}px)`;
     footer.style.transform = `translateY(${footerTransform}%)`;
 }
-
-
-
-
-
-
-
-
-
-window.addEventListener("resize", (e) => {
-    console.log(window.innerWidth)
-})
