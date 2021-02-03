@@ -1,0 +1,176 @@
+@media screen and (max-width: 1815px){
+    .footer__top,
+    .footer__mid_cont{
+        width: 100%;
+        padding: 50px;
+    }
+    .footer__mid{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 1470px){
+    .footer__top_right-title,
+    .footer__btn_case{
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }
+    .footer__top_img{
+        flex-direction: column;
+    }
+    .footer__img{
+        margin: 10px 0;
+    }
+}
+@media screen and (max-width: 1470px){
+    .home__inside_heading{
+        font-size: 28px;
+        line-height: 1.5;
+    }
+    .header__item_link,
+    .header__link{
+        font-size: 24px;
+    }
+    .home__inside_cont{
+        margin-right: 30px;
+    }
+    br{
+        display: none;
+    }
+}
+@media screen and (max-width: 1120px){
+    .footer__top_info{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__top_btns{
+        align-items: center;
+        margin-top: 10px;
+    }
+    .footer__bot_cont{
+        width: 100%;
+        padding: 0 50px;
+    }
+}
+@media screen and (max-width: 950px){
+    .home__inside_heading{
+        font-size: 19px;
+        line-height: 1.2;
+    }
+    .header__item_link,
+    .header__link{
+        font-size: 17px;
+    }
+    .home__inside_cont{
+        margin-right: 15px;
+    }
+    .home{
+        width: calc(100% - 150px);
+    }
+    .burger-menu {
+        width: 28px;
+        height: 34px;
+    }
+    .videos__icon{
+        width: 15px;
+        top: 25px;
+        left: 25px;
+    }
+    .details__item-circle{
+        transform: translateX(calc(100% - 150px));
+        -webkit-transform: translateX(calc(100% - 150px));
+        -moz-transform: translateX(calc(100% - 150px));
+        -ms-transform: translateX(calc(100% - 150px));
+        -o-transform: translateX(calc(100% - 150px));
+    }
+    .details__item-rect{
+        transform: translateX(calc(100% - 100px));
+        -webkit-transform: translateX(calc(100% - 100px));
+        -moz-transform: translateX(calc(100% - 100px));
+        -ms-transform: translateX(calc(100% - 100px));
+        -o-transform: translateX(calc(100% - 100px));
+    }
+    .details__item-triangle{
+        transform: translateX(calc(100% - 50px));
+        -webkit-transform: translateX(calc(100% - 50px));
+        -moz-transform: translateX(calc(100% - 50px));
+        -ms-transform: translateX(calc(100% - 50px));
+        -o-transform: translateX(calc(100% - 50px));
+    }
+
+    .footer__top_title,
+    .footer__btn_info,
+    .footer__bot_link{
+        font-size: 19px;
+    }
+    .footer__mid_item-title,
+    .footer__mid_item{
+        font-size: 16px;
+    }
+    .footer__mid_list{
+        margin-left: 30px;
+    }
+    .footer__mid_list:first-child{
+        margin-left: 0;
+    }
+    .footer__mid_title_link{
+        font-size: 15px;
+    }
+    .footer__mid_title_icon{
+        width: 15px;
+    }
+}
+@media screen and (max-width: 820px){
+    .footer__img{
+        width: 280px;
+    }
+    .footer__btn{
+        padding: 13px 10px;
+    }
+}
+@media screen and (max-width: 690px){
+    .footer__top,
+    .footer__mid_cont{
+        flex-direction: column;
+    }
+    .footer__top_btns{
+        margin-left: 0;
+    }
+    .footer__top_img,
+    .footer__mid_lists{
+        margin-top: 20px;
+    }
+    .footer__mid_list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 555px){
+    .footer__mid_lists{
+        flex-direction: column;
+    }
+    .footer__mid_list{
+        margin: 10px 0 0 0;
+    }
+}
+@media screen and (max-width: 400px){
+    .footer__top_title, .footer__btn_info, .footer__bot_link {
+        font-size: 15px;
+    }
+    .footer__mid_item-title, .footer__mid_item {
+        font-size: 13px;
+    }
+    .footer__img {
+        width: 220px;
+    }
+    .footer__top,
+    .footer__mid_cont{
+        padding: 20px;
+    }
+    .footer__bot_cont{
+        padding: 0 20px
+    }
+}

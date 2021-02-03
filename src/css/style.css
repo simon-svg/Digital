@@ -576,7 +576,7 @@ videos
     background-image: linear-gradient(to bottom right, rgba(35,192,173,0.4) 0%, #23c0ad 65%);
 }
 .video{
-    width: 100%;
+    height: 100%;
     display: block;
 }
 .videos__icon{
